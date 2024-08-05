@@ -4,17 +4,69 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <title>Frontend Mentor | Active preview component</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
-    <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
+    <main class="w-full min-h-screen flex items-center justify-center bg-c_Light_Grayish_Blue lg:py-0 px-4 py-16">
+        <div class="flex lg:flex-row flex-col rounded-lg lg:overflow-visible overflow-hidden">
+            <img src="/images/drawers.jpg" alt="pic"
+                class="lg:h-[22rem] lg:rounded-l-lg lg:w-fit w-full lg:aspect-square aspect-video object-cover" />
+            <div class="bg-white flex flex-col lg:w-[33rem] lg:px-12 px-7 py-10 justify-center">
+                <h1
+                    class="font-manrope text-c_Very_Dark_Grayish_Blue lg:text-2xl text-lg font-black leading-6 lg:leading-8">
+                    Shift the overall
+                    look and feel by adding these wonderful
+                    touches to furniture in your home
+                </h1>
+                <span class="font-manrope text-c_Desaturated_Dark_Blue font-medium my-6 lg:text-[16px] text-sm">
+                    Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips
+                    to help you make any room feel complete.
+                </span>
+                <div class="flex items-center justify-between pt-4 relative lg:mb-0 -mb-5">
+                    <div class="flex items-center gap-4">
+                        <img src="/images/avatar-michelle.jpg" alt="avatar" class="rounded-full lg:size-12 size-10" />
+                        <div class="flex flex-col">
+                            <span class="font-black text-c_Very_Dark_Grayish_Blue lg:text-[16px] text-sm">Michelle
+                                Appleton</span>
+                            <span class=" text-c_Grayish_Blue font-medium lg:text-[16px] text-sm">28 Jun 2020</span>
+                        </div>
+                    </div>
+                    <div class="lg:relative">
+                        <div id="share-menu"
+                            class="absolute z-10 left-[50%] lg:w-fit w-[calc(100vw-2rem)] -translate-x-[50%] lg:bottom-20 -bottom-6 hidden items-center lg:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                            <div
+                                class="bg-c_Very_Dark_Grayish_Blue items-center relative lg:w-fit w-full lg:rounded-lg rounded-b-lg lg:py-5 py-8 lg:px-12 px-10 flex lg:justify-center gap-4">
+                                <span
+                                    class="font-manrope text-c_Grayish_Blue font-bold tracking-[0.3rem] lg:text-sm">SHARE</span>
+                                <img src="/images/icon-facebook.svg" alt="facebook icon" class="size-5" />
+                                <img src="/images/icon-twitter.svg" alt="twitter icon" class="size-5" />
+                                <img src="/images/icon-pinterest.svg" alt="pinterest icon" class="size-5" />
+                                <button id="share-btn2"
+                                    class="rounded-full lg:hidden right-7 absolute overflow-hidden bg-c_Desaturated_Dark_Blue group size-10 flex items-center focus:bg-c_Very_Dark_Grayish_Blue justify-center hover:bg-c_Grayish_Blue transition">
+                                    <img src="/images/icon-share.svg" alt="share"
+                                        class="size-4 brightness-200" />
+                                    <span class="sr-only">share link</span>
+                                </button>
+                            </div>
+                            <div
+                                class="absolute lg:block hidden size-5 bg-c_Very_Dark_Grayish_Blue rotate-45 left-[50%] -translate-x-[50%] -translate-y-[50%]">
+
+                            </div>
+                        </div>
+                        <button id="share-btn"
+                            class="rounded-full overflow-hidden bg-c_Light_Grayish_Blue group size-10 flex items-center focus:bg-c_Very_Dark_Grayish_Blue justify-center hover:bg-c_Very_Dark_Grayish_Blue transition">
+                            <img src="/images/icon-share.svg" alt="share"
+                                class="size-4 group-focus:brightness-200 group-hover:brightness-200" />
+                            <span class="sr-only">share link</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script type="module" src="/src/main.ts"></script>
 </body>
