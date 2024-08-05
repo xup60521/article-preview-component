@@ -22,6 +22,15 @@ Links:
 - GitHub Repo: <https://github.com/xup60521/article-preview-component>
 - Website: <https://xup60521.github.io/article-preview-component/>
 
+```bash
+# install dependencies
+pnpm install
+# start vite dev server
+pnpm run dev
+# build (output path /dist)
+pnpm run build
+```
+
 ## My process
 
 ### Built with
